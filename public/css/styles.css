@@ -1,0 +1,28 @@
+body{
+font-family: 'Lexend Mega', sans-serif;
+font-size:small;
+}
+.navbar-brand{
+          left: 0px;
+
+          padding: 10px;
+}
+.nav-items{
+float: right;
+padding-left: 70%;
+}
+
+.posts{
+    margin-top:10px;
+}
+
+.maincontain{
+    padding-top:15px;
+}
+
+.footer-data{
+
+    text-align:center;
+
+}
+
