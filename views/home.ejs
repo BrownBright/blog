@@ -1,21 +1,17 @@
 <%- include("partials/header.ejs")  -%>
 
-
 <div class="container maincontain">
-    <div class="card posts">
-        <div class="card-body">
-            <h5 class="card-title"><%= headtitle %></h5>
-            <p class="card-text"><%= body_text %> </p>
-            <a href="#" class="btn btn-primary">Read more ..</a>
-        </div>
-    </div>
-        <div class="card posts">
-            <div class="card-body">
-                <h5 class="card-title"><%= headtitle %></h5>
-                <p class="card-text"><%= body_text %> </p>
-                <a href="#" class="btn btn-primary">Read more ..</a>
+
+    <% for( let index = 0; index < headtitle.length; index++ ) { %>
+            <div class="card posts">
+                <div class="card-body">
+                    <h5 class="card-title"><%= headtitle[index] %></h5>
+                    <p class="card-text"><%= body_text[index] %> </p>
+                    <a href="#" class="btn btn-primary">Read more ..</a>
+                </div>
             </div>
-        </div>
+    <% } %>
+        
 
 </div>
 
